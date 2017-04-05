@@ -33,7 +33,13 @@ class GameScene: SKScene {
         
 //        self.animateTexturesAction()
         
-        self.pathAction()
+//        self.pathAction()
+        
+//        self.hideAction()
+        
+//        self.blockAction()
+        
+        self.customAction()
         
         
     }
@@ -264,6 +270,64 @@ class GameScene: SKScene {
         let group = SKAction.group([speedaction, reverse])
         ball.run(group)
         
+    }
+    
+    // MARK: 显示或隐藏动作
+    func hideAction() {
+        let hide = SKAction.hide()      // 显示动作
+        let show = SKAction.unhide()    // 隐藏动作
+        
+        for index in 1...3 {
+            let ball = SKSpriteNode.init(imageNamed: "soccer")
+            ball.position = CGPoint.init(x: KScreenWidth/4 * CGFloat(index), y: KScreenHeight/2)
+            ball.size = CGSize.init(width: 60, height: 60)
+            self.addChild(ball)
+            
+            let wait = SKAction.wait(forDuration: TimeInterval(index))
+            let sequencel = SKAction.sequence([hide, wait, show, wait])
+            let runRepeat = SKAction.repeatForever(sequencel)
+            ball.run(runRepeat)
+        }
+    }
+    
+    // MARK: 块动作
+    func blockAction() {
+        let ball = SKSpriteNode.init(imageNamed: "soccer")
+        ball.position = CGPoint.init(x: KScreenWidth/2, y: KScreenHeight/2)
+        ball.size = CGSize.init(width: 80, height: 80)
+        self.addChild(ball)
+
+        // 创建块动作
+        let blockAction = SKAction.run { 
+            let rotate = SKAction.rotate(byAngle: CGFloat(Double.pi*2), duration: 3)
+            let runRepeat = SKAction.repeatForever(rotate)
+            ball.run(runRepeat)
+        }
+        ball.run(blockAction)
+    }
+    
+    // MARK: 自定义动作
+    func customAction() {
+        let background = SKSpriteNode.init(imageNamed: "field")
+        background.position = CGPoint.init(x: KScreenWidth/2, y: KScreenHeight/2)
+        background.size = CGSize.init(width: KScreenWidth, height: KScreenHeight)
+        self.addChild(background)
+        
+        let ball = SKSpriteNode.init(imageNamed: "soccer")
+        ball.position = CGPoint.init(x: KScreenWidth/2, y: KScreenHeight/2)
+        ball.size = CGSize.init(width: 50, height: 50)
+        self.addChild(ball)
+        
+        let customAction = SKAction.customAction(withDuration: 2) { (node: SKNode, elapsedTime: CGFloat) in
+            let fraction = CGFloat(elapsedTime) / 2.0
+            let yOff = 100 * 4 * fraction * (1 - fraction)
+            node.position = CGPoint.init(x: node.position.x, y: KScreenHeight/2 + CGFloat(yOff))
+        }
+        let runRepeat = SKAction.repeatForever(customAction)
+        ball.run(runRepeat)
+        
+        // MARK: 删除动作
+//        let remove = SKAction.removeFromParent()
     }
     
     
