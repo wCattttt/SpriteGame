@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow.init(frame: UIScreen.main.bounds)
         window.backgroundColor = UIColor.white
         window.makeKeyAndVisible()
-//        window.rootViewController = ViewController()
-        window.rootViewController = GameViewController()
+        window.rootViewController = UINavigationController.init(rootViewController: ViewController())
         self.window = window
         
         return true
