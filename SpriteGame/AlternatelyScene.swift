@@ -24,8 +24,6 @@ class AlternatelyScene: SKScene {
         backgroundColor = UIColor.black
         
         self.createNode()
-        
-        self.addGestureRecognizer()
     }
     
     // 创建精灵
@@ -123,20 +121,6 @@ class AlternatelyScene: SKScene {
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        backgroundColor = UIColor.green
     }
-    
-    
-    
-    // MARK: 手势
-    // 轻拍
-    func addGestureRecognizer() {
-        let tapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(self.handleTap))
-        self.view?.addGestureRecognizer(tapGestureRecognizer)
-    }
-    
-    func handleTap() {
-//        backgroundColor = UIColor.yellow
-    }
-    
     
     
 }

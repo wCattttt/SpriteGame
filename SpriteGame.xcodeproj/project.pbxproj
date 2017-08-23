@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9205966F1F4D261300E688FA /* GravityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205966E1F4D261300E688FA /* GravityController.swift */; };
+		920596711F4D262000E688FA /* GravityScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920596701F4D262000E688FA /* GravityScene.swift */; };
+		920596751F4D431800E688FA /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920596731F4D431800E688FA /* CGFloat+Extensions.swift */; };
+		920596761F4D431800E688FA /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920596741F4D431800E688FA /* CGPoint+Extensions.swift */; };
 		92DC016E1E8DDEBE005AC4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC016D1E8DDEBE005AC4E4 /* AppDelegate.swift */; };
 		92DC01701E8DDEBE005AC4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC016F1E8DDEBE005AC4E4 /* ViewController.swift */; };
 		92DC01731E8DDEBE005AC4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DC01711E8DDEBE005AC4E4 /* Main.storyboard */; };
@@ -15,12 +19,16 @@
 		92DC01821E8DF170005AC4E4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC01811E8DF170005AC4E4 /* GameScene.swift */; };
 		92DC01841E8DF1DE005AC4E4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC01831E8DF1DE005AC4E4 /* GameViewController.swift */; };
 		92E9500B1E94998400A017AC /* AlternatelyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9500A1E94998400A017AC /* AlternatelyScene.swift */; };
-		92E950131E95D93A00A017AC /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E950121E95D93A00A017AC /* CGPoint+Extensions.swift */; };
-		92E950151E95DD5A00A017AC /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E950141E95DD5A00A017AC /* CGFloat+Extensions.swift */; };
 		92E950171E9622B500A017AC /* AlternatelyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E950161E9622B500A017AC /* AlternatelyViewController.swift */; };
+		92E9501A1E96304D00A017AC /* GestureRecognizerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E950191E96304D00A017AC /* GestureRecognizerScene.swift */; };
+		92E9501C1E9630B200A017AC /* GestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E9501B1E9630B200A017AC /* GestureRecognizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9205966E1F4D261300E688FA /* GravityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityController.swift; sourceTree = "<group>"; };
+		920596701F4D262000E688FA /* GravityScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravityScene.swift; sourceTree = "<group>"; };
+		920596731F4D431800E688FA /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		920596741F4D431800E688FA /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 		92DC016A1E8DDEBE005AC4E4 /* SpriteGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DC016D1E8DDEBE005AC4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DC016F1E8DDEBE005AC4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,9 +39,9 @@
 		92DC01811E8DF170005AC4E4 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		92DC01831E8DF1DE005AC4E4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		92E9500A1E94998400A017AC /* AlternatelyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternatelyScene.swift; sourceTree = "<group>"; };
-		92E950121E95D93A00A017AC /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
-		92E950141E95DD5A00A017AC /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		92E950161E9622B500A017AC /* AlternatelyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternatelyViewController.swift; sourceTree = "<group>"; };
+		92E950191E96304D00A017AC /* GestureRecognizerScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerScene.swift; sourceTree = "<group>"; };
+		92E9501B1E9630B200A017AC /* GestureRecognizerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		920596721F4D42FC00E688FA /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				920596731F4D431800E688FA /* CGFloat+Extensions.swift */,
+				920596741F4D431800E688FA /* CGPoint+Extensions.swift */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
 		92DC01611E8DDEBE005AC4E4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,28 +83,23 @@
 		92DC016C1E8DDEBE005AC4E4 /* SpriteGame */ = {
 			isa = PBXGroup;
 			children = (
-				92E950181E96248C00A017AC /* SKUtils */,
+				920596721F4D42FC00E688FA /* helper */,
 				92DC016D1E8DDEBE005AC4E4 /* AppDelegate.swift */,
 				92DC016F1E8DDEBE005AC4E4 /* ViewController.swift */,
 				92DC01831E8DF1DE005AC4E4 /* GameViewController.swift */,
 				92DC01811E8DF170005AC4E4 /* GameScene.swift */,
 				92E950161E9622B500A017AC /* AlternatelyViewController.swift */,
 				92E9500A1E94998400A017AC /* AlternatelyScene.swift */,
+				92E9501B1E9630B200A017AC /* GestureRecognizerViewController.swift */,
+				92E950191E96304D00A017AC /* GestureRecognizerScene.swift */,
+				9205966E1F4D261300E688FA /* GravityController.swift */,
+				920596701F4D262000E688FA /* GravityScene.swift */,
 				92DC01711E8DDEBE005AC4E4 /* Main.storyboard */,
 				92DC01741E8DDEBE005AC4E4 /* Assets.xcassets */,
 				92DC01761E8DDEBE005AC4E4 /* LaunchScreen.storyboard */,
 				92DC01791E8DDEBE005AC4E4 /* Info.plist */,
 			);
 			path = SpriteGame;
-			sourceTree = "<group>";
-		};
-		92E950181E96248C00A017AC /* SKUtils */ = {
-			isa = PBXGroup;
-			children = (
-				92E950121E95D93A00A017AC /* CGPoint+Extensions.swift */,
-				92E950141E95DD5A00A017AC /* CGFloat+Extensions.swift */,
-			);
-			name = SKUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,13 +175,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920596751F4D431800E688FA /* CGFloat+Extensions.swift in Sources */,
 				92E9500B1E94998400A017AC /* AlternatelyScene.swift in Sources */,
+				920596711F4D262000E688FA /* GravityScene.swift in Sources */,
+				9205966F1F4D261300E688FA /* GravityController.swift in Sources */,
 				92DC01841E8DF1DE005AC4E4 /* GameViewController.swift in Sources */,
-				92E950151E95DD5A00A017AC /* CGFloat+Extensions.swift in Sources */,
+				92E9501C1E9630B200A017AC /* GestureRecognizerViewController.swift in Sources */,
 				92DC01701E8DDEBE005AC4E4 /* ViewController.swift in Sources */,
 				92DC016E1E8DDEBE005AC4E4 /* AppDelegate.swift in Sources */,
-				92E950131E95D93A00A017AC /* CGPoint+Extensions.swift in Sources */,
+				92E9501A1E96304D00A017AC /* GestureRecognizerScene.swift in Sources */,
 				92E950171E9622B500A017AC /* AlternatelyViewController.swift in Sources */,
+				920596761F4D431800E688FA /* CGPoint+Extensions.swift in Sources */,
 				92DC01821E8DF170005AC4E4 /* GameScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

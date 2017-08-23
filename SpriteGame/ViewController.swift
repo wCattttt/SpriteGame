@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +43,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.textLabel?.text = "精灵动作"
             
         case 1:
-            cell.textLabel?.text = "用户交互"
+            cell.textLabel?.text = "用户交互 触摸"
+            
+        case 2:
+            cell.textLabel?.text = "用户交互 手势"
+            
+        case 3:
+            cell.textLabel?.text = "重力感应"
             
         default:
             cell.textLabel?.text = "SpriteKit"
@@ -59,6 +65,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         case 1:
             self.navigationController?.pushViewController(AlternatelyViewController(), animated: true)
+            
+        case 2:
+            self.navigationController?.pushViewController(GestureRecognizerViewController(), animated: true)
+            
+        case 3:
+            self.navigationController?.pushViewController(GravityController(), animated: true)
             
         default:
             print("")
